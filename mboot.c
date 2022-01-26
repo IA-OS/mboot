@@ -111,7 +111,8 @@ int unpack()
 	}
 	int hdr_size = ftell(f);
 	printf("header size   %d\n", hdr_size);
-
+// need logic check for bos_signed... not understand C help meee lol
+	
 	// header may have 480, 728 or 1024 bytes of signature appended on some devices
 	int sig_deltas[] = { 0, 480, 248, 296 };
 	int i;
